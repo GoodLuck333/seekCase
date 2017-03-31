@@ -1,0 +1,48 @@
+* {
+	outline: none;
+}
+body {
+	background: ghostwhite;
+}
+#sele-box {
+	width: 100%;
+	color: #666;
+}
+#sele-box input {
+	width: calc(100% - 32px);
+	height: 38px;
+	padding: 0 15px;
+	border: 1px solid gainsboro;
+	font-size: 14px;
+	color: #666;
+}
+#sele-box div div {
+	width: calc(100% - 17px);
+	height: 38px;
+	line-height: 38px;
+	padding: 0 0 0 15px;
+	border: 1px solid gainsboro;
+	border-top: 0;
+	background: #fff;
+	-webkit-user-select:none;
+	cursor: pointer;
+}
+#sele-box div div:hover {
+	background: ghostwhite;
+}
+#sele-box div div:active {
+	background: gainsboro;
+}
+#sele-box div div label.close {
+	padding: 0 10px;
+	font-size: 12px;
+	color: #bbb;
+	cursor: pointer;
+	float: right;
+}
+#sele-box div div label.red {
+	color: red;
+}
+#sele-box .noHide {
+	cursor: pointer;
+}
