@@ -28,8 +28,8 @@ var SeleBox = function (wrapper ,data) {
 				}
 			}
 			seekProcess();
-			hideData();
 		}, false);
+		hideData();
 	};
 	
 	//seek process
@@ -65,7 +65,7 @@ var SeleBox = function (wrapper ,data) {
 		document.addEventListener('click', function (e) {
 			var ev = e || window.event;
 			var target = ev.target || ev.srcElement;
-			console.log(target.className);
+			//console.log(target.className);
 			if (target.className !== 'enter' && target.className !== 'noHide' && target.className !== 'red noHide' && target.className !== 'close noHide') {
 				wrap.lastChild.innerHTML = '';
 			}
